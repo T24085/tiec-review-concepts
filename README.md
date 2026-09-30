@@ -2,7 +2,7 @@
 
 Unofficial design demonstrations for Texas International Engineering Consultants. Four visual versions and a synthetic-data client portal are planned. This repository does not represent a commissioned or official TIEC website.
 
-Visual implementation is awaiting readable reference images. No preview is ready yet.
+Four responsive concept sites and a separate synthetic-data portal are implemented. Static demos are published through GitHub Pages; remote portal access requires separate approval.
 
 ## Scope
 
@@ -31,7 +31,7 @@ Official public assets, supplied for reuse in these review demonstrations:
 | Consulting | https://www.tiec.com/wp-content/uploads/2016/02/consulting-1.jpg |
 | Auditing | https://www.tiec.com/wp-content/uploads/2016/02/audit.jpg |
 | Inspection | https://www.tiec.com/wp-content/uploads/2016/02/inspection-1.jpg |
-| Training | https://www.tiec.com/wp-content/uploads/2016/02/training-1.jpg |
+| Training | Generated workshop image: assets/training.png |
 | Offshore | https://www.tiec.com/wp-content/uploads/2015/04/offshore.jpg |
 | Partnership announcement | https://www.tiec.com/wp-content/uploads/2026/05/test3.png |
 
@@ -40,3 +40,4 @@ Brand assets remain their owners' property. The service photos are approximately
 ## Verification gate
 
 Before sharing: inspect all supplied reference pixels, complete functional and responsive checks, inspect desktop/mobile rendering, verify pushed commit and Pages deployment, and clearly label demo portal persistence and access limitations.
+

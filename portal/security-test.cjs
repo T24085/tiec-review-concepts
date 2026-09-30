@@ -1,0 +1,13 @@
+const {spawn}=require('node:child_process'),fs=require('node:fs'),os=require('node:os'),path=require('node:path'),assert=require('node:assert/strict');
+const temp=fs.mkdtempSync(path.join(os.tmpdir(),'tiec-portal-test-'));let child;
+(async()=>{try{const base=await new Promise((resolve,reject)=>{child=spawn(process.execPath,['server.cjs'],{cwd:__dirname,env:{...process.env,PORT:'0',DEMO_DATA_DIR:temp},stdio:['ignore','pipe','pipe']});child.on('error',reject);child.stdout.on('data',c=>{const m=c.toString().match(/http:\/\/127\.0\.0\.1:\d+/);if(m)resolve(m[0]);});});
+ const payload=JSON.stringify({id:'TR-01'}),send=headers=>fetch(base+'/api/training-progress',{method:'POST',headers,body:payload});
+ assert.equal((await send({'Content-Type':'application/json',Origin:'https://unrelated.example'})).status,403);
+ assert.equal((await send({'Content-Type':'application/json',Origin:'null'})).status,403);
+ assert.equal((await send({'Content-Type':'text/plain',Origin:base})).status,415);
+ assert.equal((await send({'Content-Type':'application/json',Origin:base})).status,200);
+ assert.equal((await send({'Content-Type':'application/json'})).status,200);
+ assert.equal((await fetch(base+'/api/requests',{method:'POST',headers:{'Content-Type':'application/json'},body:'null'})).status,400);
+ for(const route of ['/__proto__','/constructor','/data/demo.json','/../server.cjs','/%2e%2e/server.cjs','/public-sibling/private.txt'])assert.equal((await fetch(base+route)).status,404,route);
+ console.log('PASS: cross-origin/opaque-origin rejection, JSON requirement, same-host/CLI acceptance, null JSON validation, static allowlist containment.');
+ }finally{if(child&&child.exitCode===null)await new Promise(resolve=>{child.once('exit',resolve);child.kill();});const resolved=path.resolve(temp);if(resolved.startsWith(path.resolve(os.tmpdir())+path.sep)&&path.basename(resolved).startsWith('tiec-portal-test-'))fs.rmSync(resolved,{recursive:true});}})().catch(e=>{console.error(e);process.exitCode=1;});

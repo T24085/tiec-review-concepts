@@ -1,8 +1,8 @@
 # TIEC review concepts
 
-Unofficial design demonstrations for Texas International Engineering Consultants. Four visual versions and a synthetic-data client portal are planned. This repository does not represent a commissioned or official TIEC website.
+Unofficial design demonstrations for Texas International Engineering Consultants. Four visual versions and a synthetic-data client portal are implemented. This repository does not represent a commissioned or official TIEC website.
 
-Four responsive concept sites and a separate synthetic-data portal are implemented. Static demos are published through GitHub Pages; remote portal access requires separate approval.
+Four responsive concept sites and a separate synthetic-data portal are implemented. Static demos are published through GitHub Pages. The synthetic portal is available to existing Tailscale members at https://taylor.tail5d09b2.ts.net:8443/.
 
 ## Scope
 
@@ -40,4 +40,5 @@ Brand assets remain their owners' property. The service photos are approximately
 ## Verification gate
 
 Before sharing: inspect all supplied reference pixels, complete functional and responsive checks, inspect desktop/mobile rendering, verify pushed commit and Pages deployment, and clearly label demo portal persistence and access limitations.
+
 

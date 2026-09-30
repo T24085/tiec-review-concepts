@@ -1,26 +1,16 @@
-# Design QA
+# Premium redesign verification
 
-final result: passed
+The four supplied reference images were inspected locally. Their layouts informed the concepts; incorrect industry copy and unsupported claims were replaced with source-grounded TIEC content.
 
-## Visual references
+- V1: asymmetric navy/orange cinematic chapters, oversized typography, selected service photography, modal service detail and illustrative consulting process.
+- V2: bright editorial composition, numbered service selector with a stable detail panel, large typographic statements and a sticky photographic process story.
+- V3: cobalt technical grid, daylight inspection imagery, keyboard-operated service tabs and inspection-to-action stages.
+- V4: forest/sage human-centered composition, serif headline above panoramic work imagery, stable service detail and practical process chapters.
 
-All four supplied JPEG references were materialized with the current Library helper through existing Ubuntu Python, preserving metadata. Their actual pixels were inspected before implementation.
+Local QA covered 1440px desktop and 390px mobile, normal and reduced motion, all four versions. Checks included real scrolling, image loading, horizontal overflow, internal anchors, browser errors, menu Escape behavior, service selections, keyboard tab navigation where applicable, and honest form draft feedback. A mobile V3 Escape defect was corrected and retested. Desktop and phone screenshots were visually inspected for each version. Public deployment verification is recorded in the project vault after publication.
 
-- Version 1: cinematic navy/orange, large left hero type, four service cards, navy industry section, split about section.
-- Version 2: blue/white corporate reference, sunset worker hero, values band, split introduction, service grid.
-- Version 3: blue daylight technical hero, compact intro beside four services, expertise strip, split about section.
-- Version 4: the fourth reference closely repeats version 2; it has a distinct typography/spacing treatment, alternate headlines and inline expandable service details.
+Agency guidance applied: creative-direction, cinematic-motion, scroll-interaction, agency-os, editorial-layout, typography-mastery, web-color-system and qa-polish. Motion uses bounded transforms/reveals, preserves ordinary scrolling and has reduced-motion equivalents.
 
-## Checks
+Generated photography is conceptual imagery. No client metrics, customer endorsements or actual portal integration are claimed. Forms prepare review drafts without sending company inquiries. The portal uses shared synthetic data and is not a production authenticated system. Its approved tailnet-only route is https://taylor.tail5d09b2.ts.net:8443/; existing Tailscale membership is required.
 
-Desktop 1440px and mobile 390px renderings inspected for all concepts and the portal. No horizontal page overflow, missing images or browser JavaScript errors. Mobile navigation and service dialog/expansion interactions passed at both viewport sizes.
-
-Portal persistence tests pass, including an actual test process restart, service request creation, corrective-action history, document review, training progress, report download and invalid input handling.
-
-## Intentional adaptations and limitations
-
-Incorrect industrial-cleaning branding and unsupported numeric metrics/certification badges from the references are replaced with accurate TIEC service content and qualitative capabilities. Official TIEC logo is used rather than the mockups' invented logos. Main visuals are individual generated photos; the mockups are never used as whole-page images.
-
-Static demo forms honestly prepare drafts without sending inquiries. The portal is a synthetic shared workspace, not a production authenticated client system. Remote portal access is pending separate approval; static previews offer a clear access explanation instead of a broken remote localhost link.
-
-Remaining optional polish: expand version 1's industry photography and add bespoke icon assets. No P0/P1/P2 issue found in the checked states.
+Library screenshot upload was attempted through the supported helper but stopped with `Library prepare_uploads is not available`. Actual preview screenshots are included in the public review index instead. QA is practical browser testing, not an exhaustive accessibility certification.

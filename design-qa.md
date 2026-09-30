@@ -14,3 +14,5 @@ Agency guidance applied: creative-direction, cinematic-motion, scroll-interactio
 Generated photography is conceptual imagery. No client metrics, customer endorsements or actual portal integration are claimed. Forms prepare review drafts without sending company inquiries. The portal uses shared synthetic data and is not a production authenticated system. Its approved tailnet-only route is https://taylor.tail5d09b2.ts.net:8443/; existing Tailscale membership is required.
 
 Library screenshot upload was attempted through the supported helper but stopped with `Library prepare_uploads is not available`. Actual preview screenshots are included in the public review index instead. QA is practical browser testing, not an exhaustive accessibility certification.
+
+Public premium QA passed all 16 desktop/mobile normal/reduced-motion cases. Logo integration was checked at header scale in all concepts and the portal. Barlow fonts were moved into local assets with their OFL licenses after testing exposed a narrow-screen fallback overflow; a wrapping safeguard also preserves content when fonts fail. Proposed identity provenance is recorded in assets/GENERATED-ASSETS.md.

@@ -9,3 +9,6 @@ Created 2026-09-30 with the built-in OpenAI image generation tool, following vis
 - `training.png`: Photoreal wide editorial photograph of professional adult quality auditors collaborating in a workshop classroom with instructor, laptop and documents. Cool industrial blue palette, natural daylight, business casual clothing, authentic anatomy. No readable text, logos, watermark, UI, border or collage. Generated as replacement illustrative imagery when the official training photograph returned HTTP403; does not represent actual TIEC employees.
 
 All assets inspected visually after saving. The mockup screenshots were used to inform composition and mood only; the resulting files are separate photographic assets intended for responsive HTML layouts.
+
+## Proposed identity
+TIEC-precision-logo-concept.png, supplied through Library libfile_a20d13b2dce08191908bb1b84ea0d4a8. Transparent 2172 × 724 PNG, generated proposed identity: navy wordmark, cobalt structural-member symbol and orange joint. Used with preserved proportions and light containers on dark surfaces. Not an adopted TIEC logo. Portal integration is an embedded static image and required no service restart.
